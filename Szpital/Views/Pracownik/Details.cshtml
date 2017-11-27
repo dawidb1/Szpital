@@ -1,0 +1,50 @@
+﻿@model Szpital.Models.Pracownik
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Pracownik</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Imie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Imie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nazwisko)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nazwisko)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Oddzial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Oddzial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Stopien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Stopien)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PracownikID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
